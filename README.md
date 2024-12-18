@@ -1,7 +1,9 @@
 #REST_API
 
 ## 1. Склонировать проект
-```git clone https://github.com/Ka4aev/django_rest_api```
+```
+git clone https://github.com/Ka4aev/django_rest_api
+```
 ## 2. Прописать команды в терминал
 ```
 pip install django djangorestframework 
