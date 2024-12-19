@@ -2,8 +2,7 @@
 # Create your views here.
 from django.shortcuts import render
 from rest_framework import viewsets, filters
-from rest_framework.permissions import IsAdminUser
-
+from .permissions import IsAdminUser
 # Импорты моделей и сериализаторов
 from .models import Author, Book
 from .serializers import AuthorSerializer, BookSerializer
@@ -15,7 +14,6 @@ class AuthorViewSet(viewsets.ModelViewSet):
     """
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
-    permission_classes = [IsAdminUser]
 
 class BookViewSet(viewsets.ModelViewSet):
     """
